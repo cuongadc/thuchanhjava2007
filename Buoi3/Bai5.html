@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bài 5</title>
+</head>
+<style>
+    .menu ul {
+        list-style-type: none;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        background-color: pink;
+        border: 2px solid red;
+        width: 200px;
+        height: 50px;
+        line-height: 40px;
+        position: relative;
+        padding-left: 10px;
+        margin-top: -2px;
+        left: 500px;
+    }
+    
+    .menu li:hover {
+        background-color: white;
+    }
+    
+    .jav {
+        display: none;
+        position: absolute;
+    }
+    
+    .jav li {
+        margin-left: -340px;
+        top: -40px;
+    }
+    
+    .menu li:hover .jav {
+        display: block;
+    }
+    
+    .idol {
+        display: none;
+        position: absolute;
+    }
+    
+    .idol li {
+        margin-left: -368px;
+        top: 0px;
+    }
+    
+    .jav li:hover .idol {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>Trang Chủ</li>
+            <li>Nhật Bản
+                <ul class="jav">
+                    <li>Không che</li>
+                    <li>Phim ngắn
+                    </li>
+                    <li>Idol
+                        <ul class="idol">
+                            <li>Yua Mikami</li>
+                            <li>Yui Hatano</li>
+                            <li>Eimi Fukada</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Âu Mỹ</li>
+            <li>Châu Á</li>
+        </ul>
+    </div>
+</body>
+
+</html>
