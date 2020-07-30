@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai4</title>
+    <script>
+        var soNguyenDuong = [3, 29, 23, 24, 9, 63, 88, 2, 4];
+        var n = 8;
+        var number = +(window.prompt("Mảng có 9 phần tử, nhập vị trí phần tử muốn xóa:"));
+        //parseFloat(number);
+        // window.alert(number);
+        // window.alert(typeof(number));
+
+
+        if (number < 0 || number > 8) {
+            window.alert("Vị trí không tồn tại!");
+        } else {
+            for (var i = number; i <= soNguyenDuong.length - 1; i++) {
+                soNguyenDuong[i] = soNguyenDuong[i + 1];
+                soNguyenDuong.slice(soNguyenDuong.length);
+            }
+
+            --n;
+        }
+        window.alert(soNguyenDuong);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
