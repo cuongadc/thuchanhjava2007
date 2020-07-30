@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai1</title>
+    <script>
+        function Check() {
+            var tuoi = parseInt(input.value);
+            if (tuoi < 16) {
+                window.alert("Bạn chưa đủ tuổi!");
+            } else {
+                window.alert("Đủ tuổi rồi!");
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <p>Nhập tuổi của bạn:
+            <input type="text" width="100px" id="input" name="nhap" value="">
+            <input type="button" height="50px" width="100px" value="Xem kết quả" onclick="Check()">
+        </p>
+    </form>
+</body>
+
+</html>

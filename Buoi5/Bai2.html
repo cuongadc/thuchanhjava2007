@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai2</title>
+    <script>
+        function Check() {
+            var regex = /^(\d+)$/;
+            var hs1 = parseInt(document.getElementById("hs1").value);
+            var hs2 = parseInt(document.getElementById("hs2").value);
+            var hs3 = parseInt(document.getElementById("hs3").value);
+            var gpa = (hs1 + hs2 * 2 + hs3 * 3) / 6;
+            if (hs1 < 0 || hs1 > 10 || hs2 < 0 || hs2 > 10 || hs3 < 0 || hs2 > 10 ||
+                !regex.test(hs1) || !regex.test(hs2) || !regex.test(hs3)) {
+                window.alert("Dữ liệu không đúng, mời nhập lại");
+            } else {
+                if (gpa >= 9.0)
+                    window.alert("Hạng A!");
+                else if (gpa >= 7.0 && gpa < 9.0)
+                    window.alert("Hạng B!");
+                else if (gpa >= 5.0 && gpa < 7.0)
+                    window.alert("Hạng C!");
+                else
+                    window.alert("Hạng F!");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <p>Nhập điểm hệ số 1:<input type="text" id="hs1" name="diemhs1" value="" width="100px"> </p>
+        <p>Nhập điểm hệ số 2:<input type="text" id="hs2" value="" width="100px"> </p>
+        <p>Nhập điểm hệ số 3:<input type="text" id="hs3" value="" width="100px"></p>
+        <input type="button" name="check" value="Xét học lực" onclick="Check()">
+
+    </form>
+</body>
+
+</html>
